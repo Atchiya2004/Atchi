@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import mangoose from "mongoose";
-
 
 const connectDB = async ()=>{
     console.log(process.env.MODBRUL)
