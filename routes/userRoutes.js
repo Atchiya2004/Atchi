@@ -1,18 +1,26 @@
 import express from "express";
-import {register} from "../controller/userController.js";
+import { register } from "../controller/userController.js";
+import { sendMail } from "../controller/sendMail.js";
 
 const userRoute = express.Router();
 
-//GET
+// GET
 
 
-//POST
+// POST
+
 userRoute.post("/register",register)
-    
 
-//PUT
+userRoute.post("/send-email",sendMail)
 
 
-//DELETE
+// PUT
+
+
+// DELETE
+
+
+
+
 
 export default userRoute
